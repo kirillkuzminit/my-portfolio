@@ -1,0 +1,139 @@
+.body_fixed {
+  overflow: hidden;
+}
+
+.burger-btn {
+  display: none;
+  position: absolute;
+  top: 37px;
+  right: 15px;
+  z-index: 100;
+  border: none;
+}
+
+.burger {
+  display: flex;
+  justify-content: end;
+  position: fixed;
+  margin-top: 0;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.burger_open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.burger__content {
+  width: 40%;
+  height: 100%;
+  padding: 37px;
+  padding-top: 40px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transition: transform 0.3s linear;
+  font-family: IBM Plex Mono;
+  color: #ffffff;
+  transform: translateX(100%);
+  background-color: #000000;
+}
+
+.burger_open .burger__content {
+  transform: translateX(0);
+}
+
+.burger-header-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.burger-header-nav-link {
+  display: block;
+  font-size: 25px;
+  line-height: 33px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.burger-header-nav-link:hover {
+  opacity: 0.5;
+}
+.burger-contacts {
+  margin-top: 35px;
+}
+.burger-contacts__wrapper {
+  margin-top: 13px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0px;
+}
+
+.burger-contacts-title {
+  margin: 0;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  opacity: 50%;
+}
+
+.burger-contacts-link {
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 46px;
+  color: #ffffff;
+}
+
+@media (max-width: 1199px) {
+  .burger-btn {
+    display: block;
+    padding: 0;
+    margin-top: -17px;
+    margin-right: -5px;
+    width: 63px;
+    height: 65px;
+    border: 0;
+    background: transparent;
+    background-image: url("../recources/burger.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .burger__content {
+    position: relative;
+    z-index: 2000;
+  }
+  .burger__logo-link {
+    display: inline-block;
+    height: 55px;
+  }
+  .header-nav {
+    display: none;
+  }
+  .burger-btn_open {
+    background-image: url("../recources/close.png");
+    z-index: 6;
+    margin: -14px 6px 0 0;
+    width: 33px;
+    height: 33px;
+  }
+}
+
+@media (max-width: 767px) {
+  .burger__content {
+    width: 350px;
+  }
+  .burger-btn {
+    margin-top: -18px;
+    margin-right: -10px;
+  }
+}

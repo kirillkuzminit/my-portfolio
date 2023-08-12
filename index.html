@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend-разработчик Кузьмин Кирилл</title>
+    <link rel="icon" href="recources/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=Manrope&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-inner">
+          <a class="logo-link">
+            <p class="logo-text">kuzmin</p>
+          </a>
+          <nav class="header-nav">
+            <a class="nav-link" href="#portfolio">портфолио</a>
+            <a class="nav-link" href="#competencies">компетенции</a>
+            <a class="nav-link" href="#services">услуги</a>
+            <a class="nav-link" href="#contacts">контакты</a>
+          </nav>
+          <button class="js-burger-btn burger-btn"></button>
+        </div>
+        <div class="header__info">
+          <p class="text">
+            Разрабатываю имиджевые сайты для малого и среднего бизнеса, которые
+            повышают престиж компании и позволяют
+            <span class="text__stand-out">выделиться</span> на фоне конкурентов
+          </p>
+          <h1>Привет, я Кирилл — фронтенд разработчик и дизайнер сайтов</h1>
+        </div>
+      </div>
+    </header>
+    <section class="js-burger burger">
+      <div class="burger__content">
+        <a class="burger__logo-link" href="#">
+          <img
+            class="logo-burger"
+            src="./recources/logo-burger.png"
+            alt="Логотип компании Метрика"
+          />
+        </a>
+        <nav class="burger-header-nav">
+          <a class="burger-header-nav-link" href="#portfolio">портфолио</a>
+          <a class="burger-header-nav-link" href="#competencies">компетенции</a>
+          <a class="burger-header-nav-link" href="#services">услуги</a>
+          <a class="burger-header-nav-link" href="#contacts">контакты</a>
+        </nav>
+        <div class="burger-contacts js-burger__content">
+          <h2 class="burger-contacts-title">Для связи:</h2>
+          <ul class="burger-contacts__wrapper">
+            <li>
+              <a
+                class="burger-contacts-link"
+                target="_blank"
+                href="https://t.me/KillReal15"
+                >telegram</a
+              >
+            </li>
+            <li>
+              <a
+                class="burger-contacts-link"
+                href="https://instagram.com/kmkuzmin?igshid=ZGUzMzM3NWJiOQ=="
+                target="_blank"
+                >instagram</a
+              >
+            </li>
+            <li>
+              <a
+                class="burger-contacts-link"
+                href="mailto:kirillkuzminit@yandex.ru"
+                >mail</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <main>
+      <section class="projects" id="portfolio">
+        <div class="container">
+          <h2 class="projects__title">Самые свежие проекты</h2>
+          <ul class="project-list">
+            <li class="project-item">
+              <a
+                class="project"
+                href="https://kirillkuzminit.github.io/Checkpoint-2.4/"
+                target="_blank"
+              >
+                <picture>
+                  <source
+                    media="(max-width: 500px)"
+                    srcset="./recources/metrika-phone.png"
+                  />
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="./recources/metrika-tablet.png"
+                  />
+                  <img
+                    class="project__image"
+                    src="./recources/metrika.png"
+                    alt="Дизайн интерьеров"
+                  />
+                </picture>
+                <div class="project-description-wrapper">
+                  <div class="project-description">дизайн интерьера</div>
+                </div>
+                <div class="projects__text">
+                  <h3>Метрика</h3>
+                  <p class="img__text">верстка, настройка</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-item">
+              <a class="project nothing" href="#" target="_blank">
+                <picture>
+                  <source
+                    media="(max-width: 500px)"
+                    srcset="./recources/nothing-phone.png"
+                  />
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="./recources/nothing-tablet.png"
+                  />
+                  <img
+                    class="project__image"
+                    src="./recources/nothing.png"
+                    alt="Наушники"
+                  />
+                </picture>
+                <div class="project-description-wrapper">
+                  <div class="project-description">презентация продукта</div>
+                </div>
+                <div class="projects__text">
+                  <h3>Nothing</h3>
+                  <p class="img__text">разработка интерфейса</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-item">
+              <a class="project toptrip" href="#" target="_blank">
+                <picture>
+                  <source
+                    media="(max-width: 500px)"
+                    srcset="./recources/toptrip-phone.png"
+                  />
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="./recources/toptrip-tablet.png"
+                  />
+                  <img
+                    class="project__image"
+                    src="./recources/toptrip.png"
+                    alt="Путешествия"
+                  />
+                </picture>
+                <div class="project-description-wrapper">
+                  <div class="project-description">заказ путешествий</div>
+                </div>
+                <div class="projects__text">
+                  <h3>TOPTRIP</h3>
+                  <p class="img__text">верстка</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <a class="projects__all" href="#">Смотреть все проекты</a>
+        </div>
+      </section>
+      <section class="competencies" id="competencies">
+        <div class="container">
+          <h2 class="competencies__title">Мои компетенции</h2>
+          <ul class="competencie-wrapper">
+            <li class="competencie">
+              <h3 class="competencie__title">HTML и CSS</h3>
+              <p class="competencie__text">
+                это основа фронтенд разработки. Умение создавать и правильно
+                структурировать HTML-документы, а также применять стили к этим
+                документам на CSS, является<br />обязательным навыком для
+                каждого фронтенд разработчика.
+              </p>
+            </li>
+            <li class="competencie">
+              <h3 class="competencie__title">JavaScript</h3>
+              <p class="competencie__text">
+                это язык программирования, который используется для создания
+                динамического и интерактивного пользовательского интерфейса.
+                Хороший фронтенд разработчик должен быть знаком с основами
+                JavaScript, включая работу с DOM-деревом, асинхронными запросами
+                и манипуляцией данными на стороне клиента.
+              </p>
+            </li>
+            <li class="competencie">
+              <h3 class="competencie__title">
+                Работа с библиотеками и фреймворками
+              </h3>
+              <p class="competencie__text">
+                фронтенд разработчики должны быть знакомы с различными
+                библиотеками и фреймворками, такими как React, Angular, Vue и
+                другими. Умение использовать готовые решения, адаптировать их
+                под нужды проекта и расширять их функциональность, является
+                очень важным навыком.
+              </p>
+            </li>
+            <li class="competencie">
+              <h3 class="competencie__title">
+                Разработка для мобильных устройств и адаптивная верстка
+              </h3>
+              <p class="competencie__text">
+                фронтенд разработчики должны быть знакомы с различными
+                библиотеками и фреймворками, такими как React, Angular, Vue и
+                другими. Умение использовать готовые решения, адаптировать их
+                под нужды проекта и расширять их функциональность, является
+                очень важным навыком.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="services" id="services">
+        <div class="container">
+          <h2 class="services__title">
+            Помогаю реализовать широкий спектр задач
+          </h2>
+          <ul class="service-list">
+            <li class="service-item">
+              <picture>
+                <source
+                  media="(max-width: 500px)"
+                  srcset="./recources/service-phone-1.png"
+                />
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="./recources/service-tablet-1.png"
+                />
+                <img
+                  class="service__image"
+                  src="./recources/service-1.png"
+                  alt="Сайт на тему финансов и бизнеса"
+                />
+              </picture>
+              <div class="service__description">
+                <h3 class="service__description-inner service__title">
+                  Разработка<br />сайта под ключ
+                </h3>
+                <p class="service__description-inner service__text">
+                  Это создание дизайн веб-сайтов, созданный для удобства
+                  пользователя и решения бизнес-задач<br />Сайты должны быть
+                  понятными и удобными, ведь чем понятнее сайт, тем быстрее
+                  пользователь совершит целевое действие
+                </p>
+              </div>
+            </li>
+            <li class="service">
+              <picture>
+                <source
+                  media="(max-width: 500px)"
+                  srcset="./recources/service-phone-2.png"
+                />
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="./recources/service-tablet-2.png"
+                />
+                <img
+                  class="service__image"
+                  src="./recources/service-2.png"
+                  alt="Сайт пурпурный с надписью 'Моменты движут нами'"
+                />
+              </picture>
+              <div class="service__description">
+                <h3 class="service__description-inner service__title">
+                  Верстка сайтов
+                </h3>
+                <p class="service__description-inner service__text">
+                  Это процесс создания HTML-документов и применения к ним стилей
+                  на CSS. Фронтенд разработчик может помочь создать
+                  привлекательный и удобный интерфейс для вашего сайта
+                </p>
+              </div>
+            </li>
+            <li class="service">
+              <picture>
+                <source
+                  media="(max-width: 500px)"
+                  srcset="./recources/service-phone-3.png"
+                />
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="./recources/service-tablet-3.png"
+                />
+                <img
+                  class="service__image"
+                  src="./recources/service-3.png"
+                  alt="Коллаж мобильных интерфейсов"
+                />
+              </picture>
+              <div class="service__description">
+                <h3 class="service__description-inner service__title">
+                  Разработка мобильного интерфейса
+                </h3>
+                <p class="service__description-inner service__text">
+                  Это процесс создания интерактивных элементов на странице с
+                  помощью JavaScript. Фронтенд разработчик может помочь создать
+                  динамический и удобный пользовательский интерфейс для вашего
+                  сайта или приложения.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="contacts" id="contacts">
+        <div class="contacts__bg">
+          <div class="contacts__inner">
+            <div class="contacts__content">
+              <h2 class="contacts__title">
+                Для связи со мной заполните простую форму
+              </h2>
+              <form class="input-wrapper">
+                <div class="input-list">
+                  <input
+                    class="input"
+                    type="text"
+                    name="name"
+                    placeholder="Имя Фамилия"
+                  />
+                  <input
+                    class="input"
+                    type="email"
+                    name="email"
+                    placeholder="Электронная почта"
+                  />
+                </div>
+                <button class="contacts__btn">Отправить</button>
+              </form>
+            </div>
+            <div class="contacts__img"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__up">
+          <h2 class="footer__title">
+            Портфолио фротнтенд-разработчика Кирилла Кузьмина
+          </h2>
+          <ul class="footer__contacts">
+            <li class="contact">
+              <a
+                class="contact__link"
+                href="https://t.me/KillReal15"
+                target="_blank"
+                >telegram</a
+              >
+            </li>
+            <li class="contact">
+              <a
+                class="contact__link"
+                href="https://instagram.com/kmkuzmin?igshid=ZGUzMzM3NWJiOQ=="
+                target="_blank"
+                >instagram</a
+              >
+            </li>
+            <li class="contact">
+              <a class="contact__link" href="mailto:kirillkuzminit@yandex.ru"
+                >mail</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer__down">
+          <p class="footer__text">Все права защищены. 2023</p>
+          <p class="footer__text">политика обработки данных</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./burger.js"></script>
+  </body>
+</html>

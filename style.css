@@ -1,0 +1,99 @@
+@import "./styles/header.css";
+@import "./styles/burger.css";
+@import "./styles/projects.css";
+@import "./styles/competencies.css";
+@import "./styles/services.css";
+@import "./styles/contacts.css";
+@import "./styles/footer.css";
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0 auto;
+  width: 100%;
+  font-family: "IBM Plex Mono";
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  background-color: black;
+}
+section {
+  margin-top: 150px;
+}
+h1 {
+  width: 919px;
+  font-size: 80px;
+  margin-left: -6px;
+  line-height: 70px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  color: #00e1ff;
+}
+h2 {
+  font-size: 55px;
+  line-height: 72px;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+}
+h3 {
+  text-decoration: none;
+  font-size: 35px;
+  line-height: 46px;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+}
+p {
+  color: #ffffff;
+  letter-spacing: -0.03em;
+}
+.container {
+  margin: 0 auto;
+  width: 1150px;
+  height: 100%;
+}
+@media (max-width: 1199px) {
+  h1 {
+    width: 727px;
+    padding-left: 1px;
+    font-size: 60px;
+    line-height: 70px;
+  }
+  h2 {
+    font-size: 45px;
+    line-height: 58.5px;
+  }
+  h3 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    padding-left: 12px;
+    padding-right: 10px;
+  }
+  section {
+    margin-bottom: 100px;
+  }
+  h1 {
+    margin-left: -3px;
+    max-width: 360px;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: -0.04em;
+  }
+  h2 {
+    width: 268px;
+    font-size: 30px;
+    line-height: 39px;
+  }
+  h3 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}

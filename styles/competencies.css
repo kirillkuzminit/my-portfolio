@@ -1,0 +1,201 @@
+.competencies {
+  margin-top: 152px;
+  margin-left: -2px;
+}
+.competencies__title {
+  margin-left: -1px;
+}
+.competencie-wrapper {
+  margin-top: 138px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  row-gap: 99px;
+  column-gap: 11px;
+}
+.competencie {
+  position: relative;
+  width: calc(50% - 5.5px);
+}
+.competencie:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  background-image: url("../recources/html.png");
+  width: 46px;
+  height: 45px;
+  top: -60px;
+  margin-left: 1px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.competencie:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  background-image: url("../recources/js.png");
+  width: 45px;
+  height: 45px;
+  top: -60px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.competencie:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  background-image: url("../recources/mobile.png");
+  width: 45px;
+  height: 45px;
+  top: -57px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.competencie:nth-child(4)::before {
+  content: "";
+  position: absolute;
+  background-image: url("../recources/atom.png");
+  width: 45px;
+  height: 45px;
+  top: -57px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.competencie__title {
+  margin-left: -1px;
+  margin-bottom: 15px;
+  font-size: 35px;
+  line-height: 46px;
+  color: #00e1ff;
+}
+.competencie__text {
+  font-size: 22px;
+  line-height: 29px;
+}
+@media (max-width: 1199px) {
+  .competencies {
+    margin-top: 150px;
+    margin-left: -1px;
+  }
+  .competencie-wrapper {
+    margin-top: 108px;
+    row-gap: 84px;
+  }
+  .competencie__title {
+    margin-bottom: 12px;
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .competencie__text {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .competencie:nth-child(1)::before {
+    content: "";
+    position: absolute;
+    background-image: url("../recources/html.png");
+    width: 36px;
+    height: 36px;
+    top: -48px;
+    margin-left: 1px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .competencie:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    background-image: url("../recources/js.png");
+    width: 36px;
+    height: 36px;
+    top: -48px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .competencie:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    background-image: url("../recources/mobile.png");
+    width: 36px;
+    height: 36px;
+    top: -48px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .competencie:nth-child(4)::before {
+    content: "";
+    position: absolute;
+    background-image: url("../recources/atom.png");
+    width: 36px;
+    height: 36px;
+    top: -48px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+@media (max-width: 767px) {
+  .competencies {
+    margin-top: 105px;
+    margin-left: 2px;
+  }
+  .competencie {
+    width: 100%;
+  }
+  .competencie-wrapper {
+    margin-top: 122px;
+    flex-direction: column;
+    row-gap: 108px;
+  }
+  .competencie__title {
+    margin-bottom: 14px;
+  }
+  .competencie:nth-child(1)::before {
+    content: "";
+    position: absolute;
+    background-image: url("../recources/html.png");
+    width: 36px;
+    height: 36px;
+    top: -48px;
+    margin-left: -1px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .competencie:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    background-image: url("../recources/js.png");
+    width: 36px;
+    height: 36px;
+    top: -48px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .competencie:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    background-image: url("../recources/mobile.png");
+    width: 36px;
+    height: 36px;
+    top: -48px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .competencie:nth-child(4)::before {
+    content: "";
+    position: absolute;
+    background-image: url("../recources/atom.png");
+    width: 36px;
+    height: 36px;
+    top: -48px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
